@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SchedApp.Views.CreatePage"
+             Title="CreatePage">
+    <Grid RowDefinitions="*, *, *, *, *">
+        <Frame BackgroundColor="#247ba0"
+               HeightRequest="140">
+            <StackLayout>
+                <Label Text="CREATE APPOINTMENT" 
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="Start"
+               Margin="5"
+               FontAttributes="Bold"
+               FontSize="15"
+               Grid.Row="0"/>
+                <Label Text="Name"
+               VerticalOptions="FillAndExpand"
+               Margin="5"/>
+                <Entry Placeholder=""/>
+            </StackLayout>
+        </Frame>
+
+        <Label x:Name="CurrentTimeLabel"
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="CenterAndExpand"
+        Grid.Row="1"
+        FontSize="25"
+        WidthRequest="100"
+               HeightRequest="70"
+               BackgroundColor="Beige"/>
+
+
+
+        <ListView x:Name="AgendaListView">
+            
+        </ListView>
+
+
+
+    </Grid>
+</ContentPage>
+
+
